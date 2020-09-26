@@ -1,0 +1,26 @@
+{
+  "name": "router86.u2sb.top",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "markdown-it-attrs": "^3.0.1",
+    "markdown-it-footnote": "^3.0.2",
+    "markdown-it-imsize": "^2.0.1",
+    "markdown-it-sub": "^1.0.0",
+    "markdown-it-sup": "^1.0.0",
+    "markdown-it-task-lists": "^2.1.1",
+    "vuepress": "^1.5.4",
+    "vuepress-plugin-one-click-copy": "^1.0.2",
+    "vuepress-plugin-pangu": "^1.0.1",
+    "vuepress-plugin-sitemap": "^2.3.1",
+    "vuepress-plugin-thirdparty-search": "^1.0.2",
+    "vuepress-theme-vdoing": "^1.4.4"
+  }
+}
