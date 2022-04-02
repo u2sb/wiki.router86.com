@@ -2,7 +2,7 @@ import { UserPlugins } from "vuepress/config";
 
 export default <UserPlugins>{
   sitemap: { hostname: "https://wiki.router86.com" },
-  mmedia: {
+  smplayer: {
     artplayer: {
       src: {
         playbackRate: true,

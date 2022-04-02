@@ -1,7 +1,7 @@
 ---
-pageComponent: 
+pageComponent:
   name: Catalogue
-  data: 
+  data:
     key: 01.NAS
     imgUrl: /assets/img/tou.png
     description: NAS相关知识
@@ -11,6 +11,6 @@ permalink: /nas/
 sidebar: true
 article: false
 comment: false
-comments: false 
+comments: false
 editLink: false
 ---

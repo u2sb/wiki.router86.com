@@ -16,23 +16,23 @@ jobs:
     runs-on: ubuntu-latest # 运行在虚拟机环境ubuntu-latest
 
     steps:
+      # 检出
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Setup Pnpm
-        uses: pnpm/action-setup@v2        
-        with:
-          version: latest
-          run_install: true
-
+        # 安装 node
       - name: Setup Node
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: '16.x'
-          cache: 'pnpm'
+          node-version: "16.x"
+          registry-url: "https://registry.npmjs.org"
+          cache: "yarn"
 
-      - run: pnpm run build
-      - run: touch dist/.nojekyll
+        # 构建
+      - name: Build
+        run: |
+          yarn install
+          yarn build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
